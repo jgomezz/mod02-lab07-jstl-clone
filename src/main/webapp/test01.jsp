@@ -12,8 +12,14 @@
 <body>
  
 <!-- JSTL -->
-<c:set scope="session" var="name" value="<b>David</b>"/>
-Bienvenido <c:out value="Hola ${sessionScope.name}" default="Invitado" escapeXml="false"/>
+<c:set  scope="session" 
+		var="name" 
+		value="<b>David</b>"/>
+		
+		
+Bienvenido <c:out value="Hola ${sessionScope.name}" 
+				  default="Invitado" 
+				  escapeXml="false"/>
 
 <br>
 <!-- SCRIPTLET -->
